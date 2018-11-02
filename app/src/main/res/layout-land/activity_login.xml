@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <EditText
+        android:id="@+id/lUsername"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="113dp"
+        android:ems="10"
+        android:hint="@string/Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="224dp"
+        android:layout_height="56dp"
+        android:layout_alignStart="@+id/lUsername"
+        android:layout_alignLeft="@+id/lUsername"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lUsername"
+        android:layout_alignLeft="@+id/lUsername"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="279dp"
+        android:layout_marginLeft="279dp"
+        android:layout_marginBottom="84dp"
+        android:text="@string/Login" />
+
+    <TextView
+        android:id="@+id/txtLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lUsername"
+        android:layout_alignLeft="@+id/lUsername"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="301dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginBottom="30dp"
+        android:text="Don't have an account? \n Register Here" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lUsername"
+        android:layout_alignLeft="@+id/lUsername"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/Login"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginRight="255dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>
