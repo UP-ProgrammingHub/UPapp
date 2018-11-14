@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class SignIn extends AppCompatActivity {
 
-    TextView txtSignIn ;
+    TextView txtSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -10,4 +10,6 @@
     <string name="Name_surname">Name and surname</string>
     <string name="Sign_in">Sign In</string>
     <string name="Sign_up">Sign Up</string>
+    <string name="Send">Send</string>
+    <string name="PutYourEmail">Put your email address</string>
 </resources>
