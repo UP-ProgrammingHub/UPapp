@@ -7,5 +7,101 @@
     android:layout_height="match_parent">
 
 
+    <Button
+        android:id="@+id/lecture"
+        android:layout_width="298dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/lectures"
+        app:layout_constraintBottom_toTopOf="@+id/libraries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/libraries"
+        android:layout_width="298dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/libraries"
+        app:layout_constraintBottom_toTopOf="@+id/exams_h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture" />
+
+    <Button
+        android:id="@+id/exams_h"
+        android:layout_width="298dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/exams_h"
+        app:layout_constraintBottom_toTopOf="@+id/kudu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/libraries" />
+
+    <Button
+        android:id="@+id/kudu"
+        android:layout_width="298dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/kudu"
+        app:layout_constraintBottom_toTopOf="@+id/dining"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exams_h" />
+
+    <Button
+        android:id="@+id/dining"
+        android:layout_width="298dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/dining_h"
+        app:layout_constraintBottom_toTopOf="@+id/main_campus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kudu" />  // button7
+
+    <Button
+        android:id="@+id/main_campus"
+        android:layout_width="298dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="63dp"
+        android:text="@string/main_campus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dining" />   // button8
 
 </android.support.constraint.ConstraintLayout>

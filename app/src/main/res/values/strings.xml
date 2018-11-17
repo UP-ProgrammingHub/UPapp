@@ -12,4 +12,10 @@
     <string name="Sign_up">Sign Up</string>
     <string name="Send">Send</string>
     <string name="PutYourEmail">Put your email address</string>
+    <string name="lectures">Lecture Halls</string>
+    <string name="libraries">Libraries</string>
+    <string name="exams_h">Exams Halls</string>
+    <string name="kudu">Kudu Terminals</string>
+    <string name="dining_h">Dining Halls</string>
+    <string name="main_campus">Main Campus</string>
 </resources>
