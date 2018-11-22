@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:background="@android:color/background_dark">
+    android:background="@android:color/background_dark">
 
     <ScrollView
-        android:id="@+id/scrollView3"
+        android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/main_campus"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="@id/main_campus"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.constraint.ConstraintLayout
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:background="@android:color/background_dark">
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/lecture"
@@ -33,17 +32,15 @@
                 android:layout_height="39dp"
                 android:layout_marginStart="45dp"
                 android:layout_marginLeft="45dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="45dp"
                 android:layout_marginRight="45dp"
                 android:layout_marginBottom="5dp"
                 android:text="@string/lectures"
-                android:textColor="@android:color/background_dark"
                 app:layout_constraintBottom_toTopOf="@+id/libraries"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_chainStyle="packed" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/libraries"
@@ -56,7 +53,6 @@
                 android:layout_marginRight="45dp"
                 android:layout_marginBottom="5dp"
                 android:text="@string/libraries"
-                android:textSize="14sp"
                 app:layout_constraintBottom_toTopOf="@+id/exams_h"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -77,6 +73,54 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/libraries" />
+
+            <Button
+                android:id="@+id/labs"
+                android:layout_width="298dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/labs"
+                app:layout_constraintBottom_toTopOf="@+id/reses"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/exams_h" />
+
+            <Button
+                android:id="@+id/reses"
+                android:layout_width="298dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/reses"
+                app:layout_constraintBottom_toTopOf="@+id/services"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labs" />
+
+            <Button
+                android:id="@+id/services"
+                android:layout_width="298dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/services"
+                app:layout_constraintBottom_toTopOf="@+id/kudu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reses" />
 
             <Button
                 android:id="@+id/kudu"
@@ -119,28 +163,30 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="45dp"
                 android:layout_marginRight="45dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="80dp"
                 android:text="@string/shops"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/dining" />
-        </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
     </ScrollView>
 
     <Button
         android:id="@+id/main_campus"
         android:layout_width="298dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginRight="45dp"
-        android:layout_marginBottom="5dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginRight="145dp"
+        android:background="@android:color/darker_gray"
         android:text="@string/main_campus"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 </android.support.constraint.ConstraintLayout>

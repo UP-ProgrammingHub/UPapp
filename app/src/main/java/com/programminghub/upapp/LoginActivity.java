@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     TextView txtLogin ;
     Button login;
 
@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
-                startActivity(new Intent(getApplicationContext(),SignIn.class));
+                startActivity(new Intent(getApplicationContext(),SignInActivity.class));
             }
         });
 
@@ -32,7 +32,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
-                startActivity(new Intent(getApplicationContext(), Facilities.class));
+                startActivity(new Intent(getApplicationContext(), FacilitiesActivity.class));
             }
         });
 
