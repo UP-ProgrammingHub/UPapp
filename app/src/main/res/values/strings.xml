@@ -18,4 +18,8 @@
     <string name="kudu">Kudu Terminals</string>
     <string name="dining_h">Dining Halls</string>
     <string name="main_campus">Main Campus</string>
+    <string name="shops">Shops</string>
+    <string name="labs">Laboratories</string>
+    <string name="reses">Resedences</string>
+    <string name="services">Services</string>
 </resources>
