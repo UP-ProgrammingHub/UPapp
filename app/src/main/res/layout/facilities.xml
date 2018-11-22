@@ -9,7 +9,7 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="426dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
@@ -18,7 +18,6 @@
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/main_campus"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -33,17 +32,15 @@
                 android:layout_height="39dp"
                 android:layout_marginStart="45dp"
                 android:layout_marginLeft="45dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="45dp"
                 android:layout_marginRight="45dp"
                 android:layout_marginBottom="5dp"
                 android:text="@string/lectures"
-                android:textColor="@android:color/background_dark"
                 app:layout_constraintBottom_toTopOf="@+id/libraries"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_chainStyle="packed" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/libraries"
@@ -56,7 +53,6 @@
                 android:layout_marginRight="45dp"
                 android:layout_marginBottom="5dp"
                 android:text="@string/libraries"
-                android:textSize="14sp"
                 app:layout_constraintBottom_toTopOf="@+id/exams_h"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -77,6 +73,54 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/libraries" />
+
+            <Button
+                android:id="@+id/labs"
+                android:layout_width="298dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/labs"
+                app:layout_constraintBottom_toTopOf="@+id/reses"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/exams_h" />
+
+            <Button
+                android:id="@+id/reses"
+                android:layout_width="298dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/reses"
+                app:layout_constraintBottom_toTopOf="@+id/services"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labs" />
+
+            <Button
+                android:id="@+id/services"
+                android:layout_width="298dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/services"
+                app:layout_constraintBottom_toTopOf="@+id/kudu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reses" />
 
             <Button
                 android:id="@+id/kudu"
@@ -119,7 +163,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="45dp"
                 android:layout_marginRight="45dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="10dp"
                 android:text="@string/shops"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -138,7 +182,9 @@
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
         android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"
         android:text="@string/main_campus"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

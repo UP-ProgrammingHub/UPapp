@@ -22,4 +22,7 @@
     <string name="labs">Laboratories</string>
     <string name="reses">Resedences</string>
     <string name="services">Services</string>
+    <string name="welcome_to_upapp">Welcome to UpApp</string>
+    <string name="or">OR</string>
+    <string name="login">Login</string>
 </resources>
